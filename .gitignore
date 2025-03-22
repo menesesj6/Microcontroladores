@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# MCUs
+*.asm
+*.cod
+*_backup.simu
+*.lst

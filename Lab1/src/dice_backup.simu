@@ -1,0 +1,23 @@
+<circuit noLinAcc="5" Speed_sps="1000000" Simu_Step_nS="1000" animate="0" Speed_per="100" reactStep="50" type="simulide_0.4">
+
+Unique  Id: pic12f683-1: 
+Circuit Id: pic12f683-1
+<item eeprom="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" mainComp="false" Mhz="20" Auto_Load="false" labelrot="0" rotation="0" valLabely="0" circPos="0,0" Logic_Symbol="false" boardRot="-1e+6" Name="" itemtype="PIC" Program="" Show_id="true" labelx="0" objectName="pic12f683-1" y="-112" valLabelx="0" id="pic12f683-1" labely="-20" vflip="1" x="-368" hflip="1" valLabRot="0" boardPos="-1e+6,-1e+6" circRot="2.01926685e-316" varList=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"/>
+
+Unique  Id: Push-2: 
+Circuit Id: Push-2
+<item Norm_Close="false" mainComp="false" labelrot="0" rotation="0" valLabely="0" circPos="0,0" boardRot="-1e+6" itemtype="Push" Show_id="false" labelx="-16" Key="" objectName="Push-2" y="-96" valLabelx="0" id="Push-2" labely="-24" Poles="1" vflip="1" x="-556" hflip="1" valLabRot="0" boardPos="-1e+6,-1e+6" circRot="1.67637667525e-312"/>
+
+Unique  Id: Fixed Voltage-13: 
+Circuit Id: Fixed Voltage-13
+<item mainComp="false" labelrot="0" rotation="0" valLabely="8" circPos="0,0" boardRot="-1e+6" itemtype="Fixed Voltage" Show_id="false" labelx="-64" Voltage="5" objectName="Fixed Voltage-13" y="-96" valLabelx="-16" id="Fixed Voltage-13" labely="-24" vflip="1" Out="true" x="-620" hflip="1" valLabRot="0" boardPos="-1e+6,-1e+6" circRot="-8" Unit=" V" Show_Volt="true"/>
+
+Unique  Id: Connector-4: 
+Circuit Id: Connector-4
+<item mainComp="false" startpinid="Push-2-switch0pinN" labelrot="0" rotation="0" valLabely="0" circPos="0,0" boardRot="-1e+6" itemtype="Connector" Show_id="false" labelx="-16" objectName="Connector-4" y="-96" valLabelx="0" id="Connector-4" pointList="-540,-96,-376,-96" labely="-24" vflip="1" x="-540" hflip="1" valLabRot="0" endpinid="pic12f683-1-GP5" boardPos="-1e+6,-1e+6" circRot="0" enodeid="Circ_eNode-14"/>
+
+Unique  Id: Connector-15: 
+Circuit Id: Connector-15
+<item mainComp="false" startpinid="Fixed Voltage-13-outnod" labelrot="0" rotation="0" valLabely="0" circPos="0,0" boardRot="-1e+6" itemtype="Connector" Show_id="false" labelx="-16" objectName="Connector-15" y="-96" valLabelx="0" id="Connector-15" pointList="-604,-96,-572,-96" labely="-24" vflip="1" x="-604" hflip="1" valLabRot="0" endpinid="Push-2-pinP0" boardPos="-1e+6,-1e+6" circRot="0" enodeid="Circ_eNode-16"/>
+ 
+</circuit>

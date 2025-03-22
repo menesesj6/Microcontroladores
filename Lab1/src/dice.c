@@ -10,6 +10,7 @@ word __at 0x2007 __CONFIG = (_WDTE_OFF);
 *  --------------------
 */ 
 void delay (unsigned int time);
+uint8_t lfsr (uint8_t seed, uint8_t min,uint8_t max);
 
 
 int main (){
@@ -19,30 +20,23 @@ int main (){
 	GPIO = 0x00; 
     
     // Basic variables
-    uint8_t  throw;
+    uint8_t  throw = 1;
 
     // Generate random number
 
-
     // Modify GPIO outputs based on number
     switch (throw){
-        case 1:
-            /* code */
+        case 1: 
             break;
         case 2:
-            /* code */
             break;
         case 3:
-            /* code */
             break;
         case 4:
-            /* code */
             break;
         case 5:
-            /* code */
             break;
         case 6:
-            /* code */
             break;
         default:
             break;
@@ -52,5 +46,12 @@ int main (){
 }
 
 void delay (unsigned int time){
+    unsigned int i, j;
+    for (i = 0; i < time; i++){
+        for (j = 0; j < time; j++)
+    }
+}
+
+uint8_t lfsr (uint8_t seed, uint8_t min,uint8_t max){
 
 }

@@ -14,7 +14,7 @@ Circuit Id: Node-151
 
 Unique  Id: Capacitor-149: 
 Circuit Id: Capacitor-149
-<item labelrot="0" valLabely="8" labely="-24" x="-508" valLabRot="0" hflip="1" valLabelx="-16" circPos="0,0" y="-48" boardPos="-1e+6,-1e+6" id="Capacitor-149" Capacitance="47" labelx="-16" itemtype="Capacitor" mainComp="false" Show_Cap="true" Unit=" uF" circRot="0" rotation="90" objectName="Capacitor-149" vflip="1" boardRot="-1e+6" Show_id="false"/>
+<item labelrot="0" valLabely="8" labely="-24" x="-508" valLabRot="0" hflip="1" valLabelx="-16" circPos="0,0" y="-48" boardPos="-1e+6,-1e+6" id="Capacitor-149" Capacitance="1" labelx="-16" itemtype="Capacitor" mainComp="false" Show_Cap="true" Unit=" uF" circRot="0" rotation="90" objectName="Capacitor-149" vflip="1" boardRot="-1e+6" Show_id="false"/>
 
 Unique  Id: Node-147: 
 Circuit Id: Node-147

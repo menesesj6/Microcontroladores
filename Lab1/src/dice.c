@@ -1,6 +1,7 @@
 #include <pic14/pic12f683.h>
 #include <stdint.h>
 
+// Delay Macro
 #define WAIT 500
 
 // Deactivate Watchdog Timer
@@ -18,14 +19,14 @@ uint8_t lfsr ();
 volatile uint8_t throw = 0x9F;
 
 void main (){
-    // Set GPIO pins functionality, GP3 is strictly input
+    // Set GPIO pins functionality, GP5 is our input and GP3 is strictly input
     TRISIO = 0b00100000; 
     // Initialize outputs in 0
 	GPIO = 0x00;
 
     // Infinite loop
     while (1){
-        // Function if dice is thrown (signal goes up in GP5)
+        // Operate LEDs if dice is thrown (signal goes up in GP5)
         if (GP5) {
 
             // Generate random number
@@ -70,6 +71,7 @@ void main (){
     }
 }
 
+// Delay function, empty for loops
 void delay (unsigned int time){
     unsigned int i, j;
     for (i = 0; i < time; i++){
@@ -77,12 +79,26 @@ void delay (unsigned int time){
     }
 }
 
+/* -------------------
+ * LFSR Algorithm PRNG
+ * -------------------
+ * Arbitrary feedback polynomial = 0xB8
+ * Arbitrary seed = 0x9F
+ */
 uint8_t lfsr (){
+    // Declare feedback polynomial
     uint8_t feedback_pol = 0xB8;
+
+    // Isolate LSB
     uint8_t lsb = throw & 1;
+
+    // Shift out LSB
     throw >>= 1; 
     if (lsb) {
+        // XOR with feedback polynomial
         throw ^= feedback_pol; 
     }
+
+    // Limit return to 1-6 range
     return throw % 6 + 1;
 }
